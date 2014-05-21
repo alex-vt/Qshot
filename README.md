@@ -1,0 +1,1 @@
+An app for taking screenshots simply by area selection, on both Windows and Linux. JavaFX 8.

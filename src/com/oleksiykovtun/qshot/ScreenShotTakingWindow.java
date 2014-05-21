@@ -117,7 +117,8 @@ public class ScreenShotTakingWindow extends Application {
             ScreenShotImage screenShot = new ScreenShotImage(getBackgroundCanvas().snapshot(null, null));
             screenShot = screenShot.crop(x, y, selectionStartX, selectionStartY);
             screenShot.copyToClipboard();
-            screenShot.writeToFilePath(screenShotSavePathHead + System.currentTimeMillis() + screenShotSavePathTail);
+            screenShot.writeToFilePath(ScreenShotsFolderManager.getScreenShotsFolderPrefix()
+                    + screenShotSavePathHead + System.currentTimeMillis() + screenShotSavePathTail);
         } catch (Exception e) {
             e.printStackTrace();
         }

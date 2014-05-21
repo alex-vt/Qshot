@@ -27,6 +27,10 @@ public class TrayApp {
         screenShotMenuItem.addActionListener(ActionEvent -> ScreenShotTakingWindow.show());
         trayMenu.add(screenShotMenuItem);
 
+        MenuItem openScreenShotsFolderMenuItem = new MenuItem("Open Screenshots Folder");
+        openScreenShotsFolderMenuItem.addActionListener(ActionEvent -> ScreenShotsFolderManager.openFolder());
+        trayMenu.add(openScreenShotsFolderMenuItem);
+
         MenuItem exitMenuItem = new MenuItem("Exit");
         exitMenuItem.addActionListener(ActionEvent -> System.exit(0));
         trayMenu.add(exitMenuItem);
