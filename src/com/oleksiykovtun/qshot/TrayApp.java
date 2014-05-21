@@ -16,8 +16,8 @@ public class TrayApp {
 
     public static void main(String[] args) throws Exception {
         ScreenShotTakingWindow.startHidden();
+        HotKeysManager.registerScreenShotTakingHotKey();
         setupTray();
-        setupHotKey();
     }
 
     private static void setupTray() throws Exception {
@@ -69,7 +69,4 @@ public class TrayApp {
         return new TrayIcon(iconImage);
     }
 
-    private static void setupHotKey() throws Exception {
-        // TODO
-    }
 }

@@ -6,7 +6,7 @@ import java.io.File;
 /**
  * Screen shots folder operations provider
  */
-public class ScreenShotsFolderManager {
+class ScreenShotsFolderManager {
     private static String screenShotsFolderPath = "Screenshots";
 
     public static void openFolder() {
