@@ -6,13 +6,12 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 /**
  * Application residence in the system tray
  */
 public class TrayApp {
-    private static final String TRAY_ICON_IMAGE_PATH = "resources/trayIcon32.png";
+    private static final String TRAY_ICON_IMAGE_PATH = "/resources/trayIcon32.png";
 
     public static void main(String[] args) throws Exception {
         ScreenShotTakingWindow.startHidden();
@@ -59,7 +58,7 @@ public class TrayApp {
         int iconSize = SystemTray.getSystemTray().getTrayIconSize().height;
         BufferedImage iconImage = new BufferedImage(iconSize, iconSize, BufferedImage.TYPE_INT_ARGB);
 
-        BufferedImage iconSourceImage = ImageIO.read(new File(imageFilePath));
+        BufferedImage iconSourceImage = ImageIO.read(TrayApp.class.getClass().getResourceAsStream(imageFilePath));
         int iconSourceSize = iconSourceImage.getHeight();
 
         double iconResizeScaleFactor = (double)iconSize / iconSourceSize;

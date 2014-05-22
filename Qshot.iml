@@ -6,8 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" name="jna-4.1.0" level="project" />
-    <orderEntry type="library" name="jkeymaster-1.1" level="project" />
+    <orderEntry type="library" exported="" name="jna-4.1.0" level="project" />
+    <orderEntry type="library" exported="" name="jkeymaster-1.1" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

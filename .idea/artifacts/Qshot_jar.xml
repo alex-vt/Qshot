@@ -2,11 +2,9 @@
   <artifact type="jar" build-on-make="true" name="Qshot:jar">
     <output-path>$PROJECT_DIR$</output-path>
     <root id="archive" name="Qshot.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/src/com/oleksiykovtun/qshot/META-INF/MANIFEST.MF" />
-      </element>
       <element id="module-output" name="Qshot" />
-      <element id="file-copy" path="$PROJECT_DIR$/resources/trayIcon32.png" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jna-4.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jkeymaster-1.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
