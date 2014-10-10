@@ -11,7 +11,7 @@ import java.awt.image.BufferedImage;
  * Application residence in the system tray
  */
 public class TrayApp {
-    private static final String TRAY_ICON_IMAGE_PATH = "/resources/trayIcon32.png";
+    private static final String TRAY_ICON_IMAGE_PATH = "/trayIcon32.png";
 
     public static void main(String[] args) throws Exception {
         ScreenShotTakingWindow.startHidden();
